@@ -1,0 +1,64 @@
+/*where in this case, we'd be grabbing any <p> that is nested somewhere inside a <div> 
+that is nested somewhere inside another <div>. If you want to grab direct children—that is, 
+an element that is directly nested inside another element, with no elements in between—you can use the > symbol
+
+Example: 
+div > p { 
+		/* Some CSS */ 
+/*	}
+
+This only grabs <p>s that are nested directly inside of <div>s; 
+it won't grab any paragraphs that are, say, nested inside lists that are in turn nested inside <div>s.
+*/
+
+.blue {
+	background-color: blue;
+	height: 200px;
+	width: 200px;
+}
+
+.red {
+	background-color: red;
+	height: 200px;
+	width: 200px;
+}
+
+#brown {
+	color: brown;
+	font-family: Courier, Arial;
+
+}
+
+.black {
+	font-family: Cursive;
+	color: black;
+}
+
+a:hover {
+	color: green;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:link {
+	color: brown;
+	font-family: Cursive;
+}
+
+a:visited {
+	color: purple;
+	font-family: Garamond;
+}
+
+div p:first-child {
+	font-size: 40px;
+}
+
+li:nth-child(4) {
+	font-size: 60px;
+	color: yellow;
+}
+
+div div p {
+	font-family: Cursive;
+}
